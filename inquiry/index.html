@@ -16,11 +16,12 @@
           <p>과천중앙고등학교 2026</p>
         </div>
       </div>
-      <div class="nav-group">바로가기</div>
+      <div class="nav-group">CONTENTS</div>
       <button class="nav-btn active" data-view="cover" onclick="show('cover')">표지</button>
       <button class="nav-btn" data-view="toc" onclick="show('toc')">목차</button>
       <button class="nav-btn" data-view="schedule" onclick="show('schedule')">1. 전체 일정표</button>
       <button class="nav-btn" data-view="s1" onclick="show('s1')">2. 1차시</button>
+      <button class="nav-btn" data-view="s1m" onclick="show('s1m')">강의자료</button>
       <button class="nav-btn" data-view="s2" onclick="show('s2')">3. 2차시</button>
       <button class="nav-btn" data-view="s3" onclick="show('s3')">4. 3차시</button>
       <button class="nav-btn" data-view="s4" onclick="show('s4')">5. 4차시</button>
@@ -46,79 +47,140 @@
       </div>
       <section id="cover" class="view active">
         <div class="hero"><div>
-          <div class="diamond"><div class="diamond-inner"><small>2026학년도</small><h2>학생 주도<br>탐구 프로젝트<br>가이드북</h2></div></div>
-          <div class="school"><div class="logo" style="margin:0 auto 8px">GJH</div><strong>과천중앙고등학교</strong><p>GWACHEON JUNGANG HIGH SCHOOL</p></div>
+          <div class="diamond"><div class="diamond-inner">
+            <small>2026학년도</small>
+            <h2>학생 주도<br>탐구 프로젝트<br>가이드북</h2>
+          </div></div>
+          <div class="school">
+            <div class="logo" style="margin:0 auto 8px">GJH</div>
+            <strong>과천중앙고등학교</strong>
+            <p>GWACHEON JUNGANG HIGH SCHOOL</p>
+          </div>
         </div></div>
       </section>
       <section id="toc" class="view">
-        <div class="section-title">CONTENTS</div>
+        <div class="section-title"><span class="num">C</span> CONTENTS</div>
         <div class="card"><table>
           <tr><th>단원</th><th>내용</th></tr>
-          <tr><td>1 전체 일정표</td><td>12차시 전체 흐름</td></tr>
-          <tr><td>2 1차시</td><td>강의 핵심 정리 및 탐구주제 구상</td></tr>
-          <tr><td>3 2차시</td><td>멘토 탐구사례, 개인 주제 구상</td></tr>
-          <tr><td>4 3차시</td><td>탐구주제 나눔, 모듈 구성</td></tr>
-          <tr><td>5 4차시</td><td>1차 탐구 계획서</td></tr>
-          <tr><td>6 5~8차시</td><td>조별 탐구, 보고서 작성</td></tr>
-          <tr><td>7 9~10차시</td><td>보고서 제출 및 PPT 준비</td></tr>
-          <tr><td>8 11~12차시</td><td>발표, 소감문, 자기 평가서</td></tr>
-          <tr><td>9 부록</td><td>학술 자료와 AI 도구</td></tr>
+          <tr><td>1 전체 일정표</td><td>12차시 전체 흐름 한눈에 보기</td></tr>
+          <tr><td>2 1차시 활동 안내</td><td>강의 핵심 정리, 나만의 탐구주제 찾는 법</td></tr>
+          <tr><td>3 2차시 활동 안내</td><td>멘토 탐구사례, 개인 주제 구상 과제</td></tr>
+          <tr><td>4 3차시 활동 안내</td><td>탐구주제 나눔, 모듈 구성, 5단계 워크시트</td></tr>
+          <tr><td>5 4차시 활동 안내</td><td>우수 계획서 예시, 1차 탐구 계획서</td></tr>
+          <tr><td>6 5~8차시 활동 안내</td><td>조별 탐구, AI 작성 매뉴얼, 보고서 요령</td></tr>
+          <tr><td>7 9~10차시 활동 안내</td><td>최종 제출, PPT 제작, 발표 준비</td></tr>
+          <tr><td>8 11~12차시 활동 안내</td><td>모듈 발표, 소감문, 자기 평가서</td></tr>
+          <tr><td>9 부록</td><td>추천 학술 자료와 AI 도구</td></tr>
         </table></div>
       </section>
       <section id="schedule" class="view">
-        <div class="section-title">1 전체 일정표</div>
-        <div class="card"><h3>12차시 전체 흐름</h3>
+        <div class="section-title"><span class="num">1</span> 전체 일정표</div>
+        <div class="card">
+          <h3 class="subhead">12차시 전체 흐름 한눈에 보기</h3>
           <table>
-            <tr><th>차시</th><th>활동</th><th>세부 사항</th><th>장소</th></tr>
-            <tr><td>1차시</td><td>목적·방법 파악</td><td>학년 전체 대면 강의</td><td>시청각실</td></tr>
-            <tr><td>2차시</td><td>멘토 사례 분석</td><td>탐구 사례 발표, 개인 주제 구상</td><td>교실</td></tr>
-            <tr><td>3차시</td><td>모듈 구성·주제 선정</td><td>카테고리별 모듈, 통합 주제</td><td>교실</td></tr>
-            <tr><td>4차시</td><td>1차 계획서</td><td>웹페이지 입력 및 한글 파일 제출</td><td>교실</td></tr>
-            <tr><td>5~8차시</td><td>조별 탐구</td><td>자료 조사·분석, 역할 분담</td><td>교실/과학실</td></tr>
-            <tr><td>9·10차시</td><td>보고서 마무리</td><td>최종 제출, PPT, 발표 연습</td><td>교실</td></tr>
-            <tr><td>11·12차시</td><td>학급 발표</td><td>발표, 소감문, 자기평가</td><td>교실</td></tr>
-            <tr><td>방과후</td><td>우수작 발표회</td><td>선정 후 시상</td><td>시청각실</td></tr>
+            <tr><th>차시</th><th>활동 내용</th><th>세부 사항</th><th>장소</th></tr>
+            <tr><td>1차시</td><td>탐구 보고서 목적·방법 파악</td><td>학년 전체 대면 강의</td><td>시청각실</td></tr>
+            <tr><td>2차시</td><td>멘토 학생 탐구사례 분석</td><td>멘토 발표, 보고서 작성 후기 공유<br>[과제] 개인별 탐구 주제 구상 및 자료 작성</td><td>교실</td></tr>
+            <tr><td>3차시</td><td>모듈 구성 / 주제 선정</td><td>매뉴얼을 읽고 개인 주제 선정 → 카테고리별 모듈 구성 → 진로 희망·선정 이유 공유 → 모듈별 통합 주제 선정</td><td>교실</td></tr>
+            <tr><td>4차시</td><td>1차 계획서 제출 / 피드백 확인</td><td>(모듈) AI 도구 활용 통합 주제 선정 → 1차 계획서 작성<br>[과제] 1차 탐구계획서 웹페이지 입력 및 한글 파일 제출</td><td>교실</td></tr>
+            <tr><td>5~8차시</td><td>조별 탐구 활동</td><td>AI·디지털 도구 활용 자료 조사·분석, 역할 분담 협력 탐구</td><td>교실/과학실</td></tr>
+            <tr><td>9·10차시</td><td>탐구 보고서 마무리 / 발표 준비</td><td>최종 제출(웹페이지), PPT 제작 및 발표 연습</td><td>교실</td></tr>
+            <tr><td>11·12차시</td><td>학급별 발표 / 개별 소감문 작성</td><td>학급 내 발표 / 소감문 및 자기평가서 작성</td><td>교실</td></tr>
+            <tr><td>방과후</td><td>우수작 발표회 및 시상</td><td>교사TF팀 검토 → 우수작 선정 → 최종 발표회 및 시상</td><td>시청각실</td></tr>
           </table>
         </div>
-        <div class="section-title">모듈 카테고리 6개</div>
+        <div class="section-title"><span class="num">6</span> 모듈 카테고리</div>
         <div class="grid grid-6">
-          <div class="cat c1"><h3>정치·사회</h3><ul><li>선거제도</li><li>복지정책</li><li>민주주의</li><li>인권</li></ul></div>
-          <div class="cat c2"><h3>미디어·콘텐츠</h3><ul><li>SNS</li><li>가짜뉴스</li><li>팬덤</li><li>OTT</li></ul></div>
-          <div class="cat c3"><h3>사회현상·경제</h3><ul><li>소비 트렌드</li><li>노동시장</li><li>청소년 문화</li></ul></div>
-          <div class="cat c4"><h3>생명·환경과학</h3><ul><li>유전자</li><li>기후변화</li><li>감염병</li></ul></div>
-          <div class="cat c5"><h3>물리·화학</h3><ul><li>에너지</li><li>반도체</li><li>화학반응</li></ul></div>
-          <div class="cat c6"><h3>융합과학·AI</h3><ul><li>인공지능</li><li>빅데이터</li><li>로봇공학</li></ul></div>
+          <div class="cat c1"><h3>정치·사회</h3><ul><li>통합사회·정치와 법</li><li>선거제도, 복지정책</li><li>민주주의, 사회 불평등, 인권</li></ul></div>
+          <div class="cat c2"><h3>미디어·콘텐츠</h3><ul><li>언어와 매체·사회·문화</li><li>SNS, 가짜뉴스, 팬덤, OTT</li><li>디지털 리터러시</li></ul></div>
+          <div class="cat c3"><h3>사회현상·경제</h3><ul><li>경제·사회·문화</li><li>소비 트렌드, 노동시장, 젠더</li><li>청소년 문화, 불평등</li></ul></div>
+          <div class="cat c4"><h3>생명·환경과학</h3><ul><li>생명과학 I·II · 지구과학</li><li>유전자, 생태계, 기후변화</li><li>감염병, 환경오염</li></ul></div>
+          <div class="cat c5"><h3>물리·화학</h3><ul><li>물리학 I·II · 화학 I·II</li><li>에너지, 신소재, 반도체</li><li>핵융합, 화학반응</li></ul></div>
+          <div class="cat c6"><h3>융합과학·AI</h3><ul><li>정보·과학탐구실험</li><li>인공지능, 빅데이터, 바이오테크</li><li>로봇공학, 데이터 과학</li></ul></div>
         </div>
       </section>
       <section id="s1" class="view">
-        <div class="section-title">2 1차시 활동 안내</div>
+        <div class="section-title"><span class="num">2</span> 1차시 활동 안내</div>
         <div class="card">
-          <h3>활동 목표</h3>
-          <ul><li>학생 주도 탐구 프로젝트의 목적과 운영 흐름을 이해한다.</li><li>우수한 탐구보고서의 기준과 기본 구조를 파악한다.</li></ul>
+          <h3 class="subhead">활동 목표</h3>
+          <ul class="compact"><li>학생 주도 탐구 프로젝트의 목적과 운영 흐름을 이해한다.</li><li>우수한 탐구보고서의 기준과 기본 구조를 파악한다.</li></ul>
+          <h4>핵심 포인트</h4>
+          <div class="note">내 진로와 연결되는 분야가 어느 카테고리인지 머릿속으로 생각해 보기<br>좋은 탐구 주제란 무엇인지 미리 생각해 보기</div>
+          <h4>준비물</h4><p>필기도구, 개인 노트 또는 태블릿</p>
+          <h4>오늘의 활동 순서 · 1차시 50분</h4>
           <div class="timeline">
-            <div class="time-item"><span>0-5분</span><div>오늘의 목표 확인 및 자료 수령</div></div>
-            <div class="time-item"><span>5-45분</span><div>탐구보고서 작성법과 주제 선정 방법 강의</div></div>
-            <div class="time-item"><span>45-50분</span><div>질의응답 및 개인별 관심 주제 생각해 보기</div></div>
+            <div class="time-item"><span>0-5분</span><div><b>01</b> 오늘의 목표 확인 및 자료 수령</div></div>
+            <div class="time-item"><span>5-45분</span><div><b>02</b> 탐구보고서 작성법과 주제 선정 방법 강의</div></div>
+            <div class="time-item"><span>45-50분</span><div><b>03</b> 질의응답 및 개인별 관심 주제 생각해 보기</div></div>
           </div>
         </div>
         <div class="good-bad">
-          <div class="good"><h3>이런 주제가 좋아요</h3><ul><li>일상에서 “왜 그랠까?” 궁금했던 것</li><li>검색 한 번으로 답이 안 나오는 것</li><li>비교하거나 측정할 수 있는 것</li><li>진로·학과와 연결된 것</li><li>2~3주 안에 가능한 범위</li></ul></div>
-          <div class="bad"><h3>이런 주제는 피하세요</h3><ul><li>너무 넓은 것</li><li>검색으로 바로 나오는 정의</li><li>단순한 찬반 논쟁</li><li>자료를 구하기 어려운 것</li><li>유행 뉴스만 따라가기</li></ul></div>
+          <div class="good"><h3>이런 주제가 좋아요</h3><ul><li>일상에서 “왜 그래까?” 궁금했던 것</li><li>검색 한 번으로 답이 안 나오는 것</li><li>비교하거나 측정할 수 있는 것</li><li>내 진로·희망 학과와 연결된 것</li><li>2~3주 안에 조사·탐구 가능한 범위</li></ul></div>
+          <div class="bad"><h3>이런 주제는 피하세요</h3><ul><li>너무 넓은 것 (“환경 문제 전반”)</li><li>검색으로 바로 나오는 정의·설명</li><li>단순한 찬반 논쟁</li><li>자료를 구하기 어려운 것</li><li>단순히 유행하는 뉴스 이슈만</li></ul></div>
         </div>
         <div class="card">
-          <h3>[활동] 강의 핵심 정리 및 나의 탐구주제 구상하기</h3>
-          <label>오늘 강의에서 가장 중요하다고 느낀 내용</label><textarea data-field="s1_key"></textarea>
-          <label>좋은 탐구보고서의 조건 2가지</label><textarea data-field="s1_report"></textarea>
-          <label>좋은 탐구 주제의 조건 2가지</label><textarea data-field="s1_topic"></textarea>
-          <label>내가 관심 있는 진로/분야</label><input class="field" data-field="s1_career" />
-          <label>탐구 보고 싶은 주제 아이디어</label><textarea data-field="s1_idea"></textarea>
-          <label>궁금한 점 및 기타 기록사항</label><textarea data-field="s1_q"></textarea>
+          <div class="h-blue">[활동] 강의 핵심 정리 및 나의 탐구주제 구상하기</div>
+          <label>1. 오늘 강의에서 가장 중요하다고 느낀 내용</label><textarea data-field="s1_key"></textarea>
+          <label>2. 좋은 탐구 보고서의 조건 2가지</label><textarea data-field="s1_report"></textarea>
+          <label>3. 좋은 탐구 주제의 조건 2가지</label><textarea data-field="s1_topic"></textarea>
+          <label>4. 내가 관심 있는 진로/분야</label><input class="field" data-field="s1_career" />
+          <label>5. 탐구 보고 싶은 주제 아이디어</label><textarea data-field="s1_idea"></textarea>
+          <label>6. 궁금한 점 및 기타 기록사항</label><textarea data-field="s1_q"></textarea>
+        </div>
+      </section>
+      <section id="s1m" class="view">
+        <div class="section-title"><span class="num">2</span> [자료] 나만의 탐구주제 찾는 법</div>
+        <div class="card">
+          <div class="h-blue">우리의 꿈과 끼를 찾아서 – 과천중앙고등학교 2026. 3. 특강</div>
+          <h3 class="subhead">1. 왜 주제 탐구인가?</h3>
+          <p>주제 탐구(과제 연구)는 평소 자신의 호기심과 흥미에서 출발합니다. 수업이나 뉴스, 진로에서 “왜?”라는 물음을 던지는 것이 주제가 됩니다.</p>
+          <div class="grid grid-3">
+            <div class="cat c3"><h3>일상</h3><ul><li>고등학생에게 적절한 수면 시간은 얼마일까?</li></ul></div>
+            <div class="cat c1"><h3>뉴스</h3><ul><li>K-팝과 대중문화의 특징과 글로벌 전략은?</li></ul></div>
+            <div class="cat c4"><h3>교과</h3><ul><li>고교 교육과정·희망 진로와 연계하여 탐색하기</li></ul></div>
+          </div>
+        </div>
+        <div class="card">
+          <h3 class="subhead">2. 탐구 주제는 어떻게 정할까?</h3>
+          <p class="note">인공지능의 연구 → 생성형 인공지능의 문제점과 교육적 활용 방안 탐구</p>
+          <table>
+            <tr><th>활동 유형</th><th>설명</th></tr>
+            <tr><td>(1) 주제 탐구형</td><td>사회·과학적 이슈나 문제 탐구</td></tr>
+            <tr><td>(2) 문제점·개선방안 탐구형</td><td>현실 문제점 진단·분석 후 개선방안</td></tr>
+            <tr><td>(3) 교과학습 심화탐구형</td><td>교과 내용을 배경지식·사고력 향상과 연계</td></tr>
+          </table>
+        </div>
+        <div class="card">
+          <h3 class="subhead">3. 탐구 과정 6단계</h3>
+          <table>
+            <tr><th>단계</th><th>핵심</th></tr>
+            <tr><td>1단계 선행연구 탐색</td><td>DBpia, RISS, scienceON, Perplexity, NotebookLM</td></tr>
+            <tr><td>2단계 주제 선정</td><td>연구 대상, 방법, 목적을 고려하여 작성</td></tr>
+            <tr><td>3단계 탐구활동</td><td>자료 분석, 실험, 설문, 통계, 인터뷰</td></tr>
+            <tr><td>4단계 계획서·보고서</td><td>동기, 목적, 선행연구, 과정, 기대효과, 참고문헌</td></tr>
+            <tr><td>5단계 결과 발표</td><td>PPT 10장 내외, 소감</td></tr>
+            <tr><td>6단계 연구 윤리</td><td>인용 표기, 표절 금지</td></tr>
+          </table>
+          <div class="warn" style="margin-top:10px">확인되지 않은 자료를 가져다 쓰거나 출처 없이 표·그래프를 쓰면 표절입니다. AI가 만든 문장은 읽고 이해한 뒤 나의 말로 다시 쓰세요.</div>
         </div>
       </section>
       <section id="s2" class="view">
-        <div class="section-title">3 2차시 활동 안내</div>
+        <div class="section-title"><span class="num">3</span> 2차시 활동 안내</div>
         <div class="card">
-          <h3>멘토 학생 탐구사례 발표 기록지</h3>
+          <h3 class="subhead">활동 목표</h3>
+          <ul class="compact">
+            <li>멘토 학생들의 실제 탐구보고서 사례를 통해 탐구 과정을 이해한다.</li>
+            <li>주제 선정부터 보고서 완성까지의 전 과정을 파악한다.</li>
+          </ul>
+          <div class="timeline">
+            <div class="time-item"><span>0-5분</span><div>오늘의 목표 확인</div></div>
+            <div class="time-item"><span>5-10분</span><div>탐구 프로젝트 운영 취지 동영상 시청</div></div>
+            <div class="time-item"><span>10-40분</span><div>멘토 학생 탐구보고서 사례 발표</div></div>
+            <div class="time-item"><span>40-50분</span><div>질의응답 및 개인 관심 주제 생각</div></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="h-blue">[활동] 멘토 학생 탐구사례 발표 기록지</div>
           <table>
             <tr><th>순번</th><th>멘토 이름</th><th>탐구주제</th><th>핵심 정리</th><th>느낀 점</th></tr>
             <tr><td>1</td><td><input data-field="m1n"></td><td><input data-field="m1t"></td><td><input data-field="m1s"></td><td><input data-field="m1f"></td></tr>
@@ -127,7 +189,7 @@
           </table>
         </div>
         <div class="card">
-          <h3>내 탐구 주제를 찾아라</h3>
+          <div class="h-blue">[활동] 내 탐구 주제를 찾아라</div>
           <div class="grid grid-2">
             <div><label>학번</label><input class="field" data-field="sid"></div>
             <div><label>이름</label><input class="field" data-field="sname"></div>
@@ -142,11 +204,11 @@
             <option>물리·화학</option>
             <option>융합과학·AI</option>
           </select>
-          <div class="steps">
-            <div class="step"><b>01</b>관심사 출발</div>
-            <div class="step"><b>02</b>범위 좁히기</div>
-            <div class="step"><b>03</b>질문화</div>
-            <div class="step"><b>04</b>실현 가능성</div>
+          <div class="hexes">
+            <div class="hex"><b>01 관심사 출발</b>“왜?” 했던 순간</div>
+            <div class="hex"><b>02 범위 좀히기</b>구체적 대상·상황</div>
+            <div class="hex"><b>03 질문화</b>A는 B에 영향을 줄까?</div>
+            <div class="hex"><b>04 실현 가능성</b>어떻게 알아볼지</div>
           </div>
           <label>1순위 주제 후보</label><input class="field" data-field="t1" />
           <label>탐구 질문</label><input class="field" data-field="q1" placeholder="예) 편의점 1+1 행사는 실제로 소비자에게 이익일까?" />
@@ -154,33 +216,45 @@
           <label>어떻게 알아볼 수 있을까?</label><textarea data-field="how1"></textarea>
           <label>2순위 주제 후보</label><input class="field" data-field="t2" />
           <label>이유 / 탐구 방법</label><textarea data-field="how2"></textarea>
-          <h4>자가 점검</h4>
-          <label class="check"><input type="checkbox" data-field="ck1"> 비교·측정이 가능한가?</label>
-          <label class="check"><input type="checkbox" data-field="ck2"> 검색으로 바로 안 나오는가?</label>
-          <label class="check"><input type="checkbox" data-field="ck3"> 2~3주 안에 가능한가?</label>
-          <label class="check"><input type="checkbox" data-field="ck4"> 내가 진짜 관심 있는가?</label>
-        </div>
-      </section>
-      <section id="s3" class="view">
-        <div class="section-title">4 3차시 활동 안내</div>
-        <div class="card">
-          <h3>역할 배분</h3>
           <table>
-            <tr><th>역할</th><th>이름</th></tr>
-            <tr><td>모듈장</td><td><input data-field="role1"></td></tr>
-            <tr><td>기록담당</td><td><input data-field="role2"></td></tr>
-            <tr><td>자료분석총괄</td><td><input data-field="role3"></td></tr>
-            <tr><td>실행기획총괄</td><td><input data-field="role4"></td></tr>
+            <tr><th>점검 항목</th><th>기준</th><th>O / △ / X</th><th>보완 방법</th></tr>
+            <tr><td>비교·측정이 가능한가?</td><td>숫자, 사례, 관찰로 확인</td><td><input data-field="ck1s"></td><td><input data-field="ck1n"></td></tr>
+            <tr><td>검색으로 바로 안 나오는가?</td><td>직접 조사·탐구 필요</td><td><input data-field="ck2s"></td><td><input data-field="ck2n"></td></tr>
+            <tr><td>2~3주 안에 가능한가?</td><td>방과 후 시간으로 실현</td><td><input data-field="ck3s"></td><td><input data-field="ck3n"></td></tr>
+            <tr><td>내가 진짜 관심 있는가?</td><td>억지로 고른 게 아닌가</td><td><input data-field="ck4s"></td><td><input data-field="ck4n"></td></tr>
           </table>
         </div>
         <div class="card">
-          <h3>주제 선정 3단계</h3>
-          <p><b>STEP 1</b> 대학 가이드북으로 세부 분야 파악</p>
-          <p><b>STEP 2</b> Perplexity로 주제 추천</p>
-          <p><b>STEP 3</b> 같은 창에서 목차 작성</p>
+          <h3 class="subhead">카테고리별 주제 예시</h3>
+          <div class="grid grid-2">
+            <div class="cat c1"><h3>정치·사회</h3><ul><li>급식 잔반량은 요일마다 다를까?</li><li>학급 규칙을 학생이 직접 만들면 더 잘 지킬까?</li></ul></div>
+            <div class="cat c2"><h3>미디어·콘텐츠</h3><ul><li>숋폼 영상을 많이 볼수록 집중 시간이 짧아질까?</li><li>SNS 팔로워 수와 게시물 신뢰도는 관계가 있을까?</li></ul></div>
+            <div class="cat c3"><h3>사회현상·경제</h3><ul><li>편의점 1+1 행사가 실제로 소비자에게 이익일까?</li></ul></div>
+            <div class="cat c4"><h3>생명·환경과학</h3><ul><li>교실 환기 횟수에 따라 집중력이 달라질까?</li></ul></div>
+            <div class="cat c5"><h3>물리·화학</h3><ul><li>마스크 종류별 차단 효율이 다를까?</li></ul></div>
+            <div class="cat c6"><h3>융합과학·AI</h3><ul><li>AI 챗봇은 같은 질문에 항상 같은 답을 줄까?</li></ul></div>
+          </div>
+        </div>
+      </section>
+      <section id="s3" class="view">
+        <div class="section-title"><span class="num">4</span> 3차시 활동 안내</div>
+        <div class="card">
+          <div class="note">탐구 주제는 거창하지 않아도 괜찮아요. 일상의 작은 의문이 출발점이 될 수 있어요.</div>
+          <h3 class="subhead">역할 배분</h3>
+          <table>
+            <tr><th>역할</th><th>주요 책임</th><th>이름</th></tr>
+            <tr><td>모듈장</td><td>토론 진행·시간 관리·합의 도출</td><td><input data-field="role1"></td></tr>
+            <tr><td>기록담당</td><td>웹페이지 실시간 입력·회의 내용 요약</td><td><input data-field="role2"></td></tr>
+            <tr><td>자료분석총괄</td><td>선행 연구·통계·뉴스·문헌 수집</td><td><input data-field="role3"></td></tr>
+            <tr><td>실행기획총괄</td><td>탐구 실행 자원·일정 기획</td><td><input data-field="role4"></td></tr>
+          </table>
+          <p><span class="pill">STEP 1</span> 대학 가이드북으로 세부 분야 파악</p>
+          <p><span class="pill">STEP 2</span> Perplexity로 주제 추천받기</p>
+          <p class="note">프롬프트: ‘OO과의 전공 분야 중 △△학과와 관련해서 고1 수준에서 진행할 수 있는 탐구 주제를 5개만 추천해줘’</p>
+          <p><span class="pill">STEP 3</span> 같은 창에서 목차 작성</p>
         </div>
         <div class="card">
-          <h3>탐구주제 나눔 기록지</h3>
+          <div class="h-blue">[활동] 탐구주제 나눔 기록지</div>
           <table>
             <tr><th>이름</th><th>진로희망</th><th>선정 주제</th><th>탐구하고 싶은 내용</th></tr>
             <tr><td><input data-field="n1"></td><td><input data-field="c1"></td><td><input data-field="tp1"></td><td><input data-field="d1"></td></tr>
@@ -188,12 +262,34 @@
             <tr><td><input data-field="n3"></td><td><input data-field="c3"></td><td><input data-field="tp3"></td><td><input data-field="d3"></td></tr>
             <tr><td><input data-field="n4"></td><td><input data-field="c4"></td><td><input data-field="tp4"></td><td><input data-field="d4"></td></tr>
           </table>
-          <label>우리 조의 통합 탐구 주제</label><input class="field" data-field="team_topic" />
+          <label>우리 조의 통합 탐구 주제</label>
+          <input class="field" data-field="team_topic" />
+          <h4>5단계 워크시트</h4>
+          <label>Step 1. 흥미 키워드 3가지</label><textarea data-field="w1"></textarea>
+          <label>Step 2. 과학적 문장으로 다듬기</label><input class="field" data-field="w2" />
+          <label>Step 3. 선행 연구 키워드</label><textarea data-field="w3"></textarea>
+          <label>Step 4. 가설</label><input class="field" data-field="w4" />
+          <label>Step 5. PREP 동기</label><textarea data-field="w5"></textarea>
         </div>
       </section>
       <section id="s4" class="view">
-        <div class="section-title">5 4차시 · 1차 탐구 계획서</div>
+        <div class="section-title"><span class="num">5</span> 4차시 · 1차 탐구 계획서</div>
         <div class="card">
+          <div class="timeline">
+            <div class="time-item"><span>0-10분</span><div>모듈 통합 주제 1개 최종 선정</div></div>
+            <div class="time-item"><span>10-40분</span><div>1차 탐구 계획서 작성 후 웹페이지 제출</div></div>
+            <div class="time-item"><span>40-50분</span><div>최종 제출 확인, 실험실·강의 신청</div></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="h-blue">[자료] 우수 계획서 예시 – SNS 중독과 자아 존중감</div>
+          <table>
+            <tr><th>탐구 의문</th><td>청소년의 자아 존중감 수준이 SNS 중독 경향성에 어떠한 영향을 미치는가?</td></tr>
+            <tr><th>탐구 방법</th><td>설문 조사 + 자아 존중감 척도 + SNS 중독 자가진단. 대상: 1~2학년 50명</td></tr>
+          </table>
+        </div>
+        <div class="card">
+          <div class="h-blue">[활동] 1차 탐구 계획서 양식</div>
           <div class="grid grid-2">
             <div><label>학번</label><input class="field" data-field="p_sid"></div>
             <div><label>이름</label><input class="field" data-field="p_name"></div>
@@ -208,44 +304,62 @@
         </div>
       </section>
       <section id="s5" class="view">
-        <div class="section-title">6 5~8차시 조별 탐구</div>
+        <div class="section-title"><span class="num">6</span> 5~8차시 조별 탐구</div>
         <div class="card">
-          <h3>오늘의 흐름</h3>
-          <div class="steps">
-            <div class="step"><b>0</b>1차 계획서 제출</div>
-            <div class="step"><b>1</b>목차 선정</div>
-            <div class="step"><b>2</b>계열별 탐구</div>
-            <div class="step"><b>3</b>즉시 기록</div>
+          <div class="note">아직 주제를 선정하지 못했어도 괜찮아요. 이번 시간동안 충분히 검색하고 협의하세요.</div>
+          <div class="hexes">
+            <div class="hex"><b>STEP 0</b>1차 계획서 제출</div>
+            <div class="hex"><b>STEP 1</b>목차 선정</div>
+            <div class="hex"><b>STEP 2</b>계열별 탐구 착수</div>
+            <div class="hex"><b>STEP 3</b>즉시 기록</div>
           </div>
-          <p>과학 계열은 실험 설계·수치·사진을, 인문 계열은 논문과 선행 연구 분석표를 준비하세요.</p>
-          <p>AI가 만든 문장은 읽고 이해한 뒤 나의 말로 다시 쓰세요.</p>
+          <h4>계열별 체크리스트</h4>
+          <label class="check"><input type="checkbox" data-field="sci1"> 실험 설계 및 변인 통제 기록</label>
+          <label class="check"><input type="checkbox" data-field="sci2"> 결과 수치·사진 저장</label>
+          <label class="check"><input type="checkbox" data-field="sci3"> 실험 사진 촬영·저장 완료</label>
+          <label class="check"><input type="checkbox" data-field="sci4"> 안전·윤리 수칙 확인</label>
+          <label class="check"><input type="checkbox" data-field="hum1"> 학술 DB 논문 확보</label>
+          <label class="check"><input type="checkbox" data-field="hum2"> 논문 제목·초록·목차 분석</label>
+          <label class="check"><input type="checkbox" data-field="hum3"> 선행 연구 분석표 작성</label>
+          <label class="check"><input type="checkbox" data-field="hum4"> 기존 연구 한계점 정리</label>
         </div>
         <div class="card">
-          <h3>모듈 활동 기록지</h3>
+          <div class="h-blue">[자료] AI·NotebookLM 6단계</div>
+          <ol>
+            <li>목차별 논문 검색 (scienceON · DBpia · RISS · KISS)</li>
+            <li>관련성 높은 논문 약 40개 PDF 다운로드</li>
+            <li>NotebookLM에 자료 업로드</li>
+            <li>보고서 초안 생성</li>
+            <li>보고서 읽고 이해하기</li>
+            <li><b>나의 언어로 재작성</b></li>
+          </ol>
+        </div>
+        <div class="card">
+          <div class="h-blue">[활동] 모듈 활동 기록지</div>
           <label>우리 조 탐구 주제</label><input class="field" data-field="act_topic" />
           <label>선정한 목차</label><textarea data-field="act_toc"></textarea>
           <label>오늘 진행한 내용 요약</label><textarea data-field="act_today"></textarea>
-          <label class="check"><input type="checkbox" data-field="sci1"> 실험 설계 및 변인 통제 기록</label>
-          <label class="check"><input type="checkbox" data-field="sci2"> 결과 수치·사진 저장</label>
-          <label class="check"><input type="checkbox" data-field="hum1"> 논문 확보</label>
-          <label class="check"><input type="checkbox" data-field="hum2"> 선행 연구 분석표 작성</label>
+          <label>다음 시간까지 해올 과제</label><textarea data-field="act_hw"></textarea>
         </div>
       </section>
       <section id="s9" class="view">
-        <div class="section-title">7 9~10차시 발표 준비</div>
+        <div class="section-title"><span class="num">7</span> 9~10차시 발표 준비</div>
         <div class="card">
-          <h3>PPT 구성</h3>
           <div class="steps">
             <div class="step"><b>1</b>주제 선정 이유</div>
             <div class="step"><b>2</b>탐구 방법</div>
             <div class="step"><b>3</b>결과</div>
             <div class="step"><b>4</b>결론</div>
-            <div class="step"><b>5</b>느낀 점</div>
           </div>
-          <p>한 장에 메시지 하나. 모듈원 모두 발표에 참여하세요. 5~7분 + 질의응답 2~3분.</p>
+          <table>
+            <tr><th>원칙</th><th>내용</th></tr>
+            <tr><td>1장 1메시지</td><td>슬라이드 한 장에 핵심 하나</td></tr>
+            <tr><td>시각 자료</td><td>그래프, 사진으로 데이터 시각화</td></tr>
+            <tr><td>텍스트 최소화</td><td>발표자가 설명할 내용은 슬라이드에 넣지 않기</td></tr>
+          </table>
         </div>
         <div class="card">
-          <h3>최종 제출 체크리스트</h3>
+          <div class="h-blue">[활동] 최종 제출 체크리스트</div>
           <label class="check"><input type="checkbox" data-field="done_report"> 보고서 제출 완료</label>
           <label>PPT 슬라이드 수</label><input class="field" data-field="ppt_n" />
           <label>역할 분담(이름/파트)</label><textarea data-field="ppt_role"></textarea>
@@ -254,11 +368,11 @@
         </div>
       </section>
       <section id="s11" class="view">
-        <div class="section-title">8 11~12차시 발표와 성찰</div>
+        <div class="section-title"><span class="num">8</span> 11~12차시 발표와 성찰</div>
         <div class="card">
-          <h3>모듈 발표 기록지</h3>
+          <div class="h-blue">[활동] 모듈 발표 기록지</div>
           <table>
-            <tr><th>모듈</th><th>발표주제</th><th>인상 깊었던 내용</th><th>질문하고 싶은 것</th></tr>
+            <tr><th>모듈</th><th>발표주제</th><th>인상 깊었던 내용</th><th>질문</th></tr>
             <tr><td>1</td><td><input data-field="g1t"></td><td><input data-field="g1n"></td><td><input data-field="g1q"></td></tr>
             <tr><td>2</td><td><input data-field="g2t"></td><td><input data-field="g2n"></td><td><input data-field="g2q"></td></tr>
             <tr><td>3</td><td><input data-field="g3t"></td><td><input data-field="g3n"></td><td><input data-field="g3q"></td></tr>
@@ -269,36 +383,41 @@
           <label>가장 인상 깊었던 모듈과 이유</label><textarea data-field="best_group"></textarea>
         </div>
         <div class="card">
-          <h3>자기 평가서</h3>
-          <label>우리 모듈의 탐구 주제</label><input class="field" data-field="se_topic" />
-          <label>가장 어려웠던 순간과 해결 방법</label><textarea data-field="se_hard"></textarea>
+          <div class="h-blue">[활동] 자기 평가서</div>
+          <p class="warn">학교생활기록부 작성에 활용되므로 성실하게 작성하세요.</p>
+          <label>1. 우리 모듈의 탐구 주제</label><input class="field" data-field="se_topic" />
+          <label>2. 가장 어려웠던 순간과 해결 방법</label><textarea data-field="se_hard"></textarea>
           <label>예상과 달랐던 점</label><textarea data-field="se_diff"></textarea>
-          <label>새롭게 알게 된 내용</label><textarea data-field="se_learn"></textarea>
+          <label>3. 새롭게 알게 된 내용</label><textarea data-field="se_learn"></textarea>
           <label>교과 외에 배운 것</label><textarea data-field="se_skill"></textarea>
-          <label>나의 역할과 기여</label><textarea data-field="se_role"></textarea>
-          <label>진로·관심 분야에 준 영향</label><textarea data-field="se_career"></textarea>
+          <label>4. 나의 역할과 기여</label><textarea data-field="se_role"></textarea>
+          <label>협력하면서 잘된 점과 아쉬운 점</label><textarea data-field="se_coop"></textarea>
+          <label>5. 진로·관심 분야에 준 영향</label><textarea data-field="se_career"></textarea>
           <label>다음에 달리 해보고 싶은 점</label><textarea data-field="se_next"></textarea>
-          <label>한 줄 소감</label><input class="field" data-field="se_one" />
+          <label>6. 한 줄 소감</label><input class="field" data-field="se_one" />
         </div>
       </section>
       <section id="appendix" class="view">
-        <div class="section-title">9 부록</div>
+        <div class="section-title"><span class="num">9</span> 부록</div>
         <div class="card">
-          <h3>추천 학술 자료</h3>
+          <h3 class="subhead">추천 학술 자료 사이트</h3>
           <table>
-            <tr><th>국내 논문</th><th>해외 논문</th><th>강의</th><th>신문</th></tr>
-            <tr><td>RISS, DBpia, scienceON</td><td>Google Scholar</td><td>KOCW, K-MOOC</td><td>빅카인즈</td></tr>
+            <tr><th>국내 논문</th><th>해외 논문</th><th>강의 자료</th><th>신문 검색</th></tr>
+            <tr><td>RISS (riss.kr)</td><td>Google Scholar</td><td>KOCW</td><td>빅카인즈</td></tr>
+            <tr><td>DBpia</td><td>scholar.google.com</td><td>K-MOOC</td><td>bigkinds.or.</td></tr>
+            <tr><td>scienceON</td><td></td><td></td><td></td></tr>
           </table>
         </div>
         <div class="card">
-          <h3>AI 도구</h3>
+          <h3 class="subhead">AI 도구</h3>
           <table>
             <tr><th>Perplexity</th><th>NotebookLM</th><th>Gamma</th></tr>
-            <tr><td>주제 추천, 목차, 배경 지식</td><td>논문 업로드 후 질문</td><td>발표 자료 초안</td></tr>
+            <tr><td>탐구 주제 추천</td><td>PDF·논문 업로드 후 질문</td><td>발표 PPT 생성</td></tr>
+            <tr><td>perplexity.ai</td><td>notebooklm.google.com</td><td>gamma.app</td></tr>
           </table>
-          <p>추천 자료가 실제로 있는지 꼭 확인하고, 최종 문장은 자신의 말로 다시 쓰세요.</p>
+          <p class="note" style="margin-top:12px">추천 자료가 실제로 있는지 꼭 확인하고, 최종 문장은 자신의 말로 다시 쓰세요.</p>
         </div>
-        <p class="footer-note">과천중앙고등학교 · 2026학년도 학생 주도 탐구 프로젝트 가이드북 인터랙티브판</p>
+        <p class="footer-note">과천중앙고등학교 · 2026학년도 학생 주도 탐구 프로젝트 가이드북</p>
       </section>
     </main>
   </div>
