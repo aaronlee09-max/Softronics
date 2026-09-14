@@ -1,45 +1,44 @@
 <!doctype html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Softronics · 과천중앙고등학교</title>
-    <style>
-      body {
-        margin: 0;
-        min-height: 100vh;
-        display: grid;
-        place-items: center;
-        background:
-          radial-gradient(circle at 12% 18%, #d9edf8 0, transparent 28%),
-          linear-gradient(180deg, #f7fbfe, #e8f3fb);
-        color: #1e3a5f;
-        font-family: "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
-      }
-      main { text-align: center; padding: 48px 24px; max-width: 720px; }
-      .logo {
-        width: 56px; height: 56px; border-radius: 50%; margin: 0 auto 16px;
-        display: grid; place-items: center; background: #4b8ed4; color: #fff; font-weight: 800;
-      }
-      h1 { margin: 0 0 8px; font-size: 40px; }
-      p { margin: 0 0 28px; color: #5c6b7d; }
-      a {
-        display: inline-block;
-        background: #4b8ed4;
-        color: #fff;
-        text-decoration: none;
-        padding: 12px 20px;
-        border-radius: 999px;
-        font-weight: 700;
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <div class="logo">GJH</div>
-      <h1>Softronics</h1>
-      <p>2026 학생 주도 탐구 프로젝트 가이드북</p>
-      <a href="inquiry/">인터랙티브 가이드북 열기</a>
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f5f5f7">
+  <title>iPhone Fonts — 아이폰 폰트</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="./"> <span>iPhone Fonts</span></a>
+    <a class="github" href="https://github.com/aaronlee09-max/Softronics" target="_blank" rel="noreferrer">GitHub ↗</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">FONT COLLECTION</p>
+      <h1>아이폰에서 더 예쁘게.<br><span>나만의 폰트로.</span></h1>
+      <p class="lead">iPhone · iPad에서 사용할 수 있는 폰트를 한눈에 보고,<br>설치 방법까지 간단하게 확인하세요.</p>
+      <div class="search"><span>⌕</span><input id="search" type="search" placeholder="폰트 이름 검색" autocomplete="off"></div>
+    </section>
+
+    <section class="section-head">
+      <div><p class="eyebrow">COLLECTION</p><h2>폰트 둘러보기</h2></div>
+      <span id="count" class="count">0 fonts</span>
+    </section>
+    <section id="grid" class="grid"></section>
+
+    <section class="guide">
+      <div><p class="eyebrow">HOW TO USE</p><h2>iPhone에 폰트 넣기</h2></div>
+      <div class="steps">
+        <article><b>01</b><h3>폰트 파일 받기</h3><p>TTF 또는 OTF 파일을 iPhone에 저장합니다.</p></article>
+        <article><b>02</b><h3>폰트 설치</h3><p>지원되는 폰트 설치 앱을 이용해 프로파일을 설치합니다.</p></article>
+        <article><b>03</b><h3>앱에서 사용</h3><p>설치가 끝나면 폰트를 지원하는 앱의 글꼴 메뉴에서 선택합니다.</p></article>
+      </div>
+      <p class="note">※ iOS의 폰트 사용 가능 여부와 설치 방식은 iOS 버전과 앱에 따라 달라질 수 있습니다.</p>
+    </section>
+  </main>
+
+  <footer>iPhone Fonts · Built for mobile · <a href="https://github.com/aaronlee09-max/Softronics">Softronics</a></footer>
+  <script src="app.js"></script>
+</body>
 </html>
